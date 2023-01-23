@@ -1,0 +1,12 @@
+{
+  "name": "culturama_sass",
+  "version": "1.0.0",
+  "description": "Versão feita com Sass do projeto feito no curso 'Praticando CSS: Grid e Flexbox' da Alura.",
+  "main": "index.js",
+  "scripts": {
+    "sass_compile": "sass ./assets/style/style.scss:./assets/style/style.css ./assets/style/flex.scss:./assets/style/flex.css ./assets/style/grid.scss:./assets/style/grid.css",
+    "sass_compile_watch": "sass --watch ./assets/style/style.scss:./assets/style/style.css ./assets/style/flex.scss:./assets/style/flex.css ./assets/style/grid.scss:./assets/style/grid.css"
+  },
+  "author": "Otavio Henrique de Lima e Silva",
+  "license": "ISC"
+}
