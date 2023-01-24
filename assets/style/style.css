@@ -22,15 +22,6 @@ body {
 }
 
 /*Estilos compartilhados*/
-.categorias__titulo,
-.destaques,
-.eventos__titulo,
-.agenda__titulo {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: var(--fonte-secundaria);
-}
-
 img {
   opacity: 1;
   transition: 0.5s;
@@ -101,7 +92,10 @@ img:hover {
   cursor: pointer;
   transition: 3.3s;
 }
-.menu__item:nth-child(4)::after:hover, .menu__item:nth-child(4)::before:hover {
+.menu__item:nth-child(4)::after:hover {
+  background-color: var(--amarelo);
+}
+.menu__item:nth-child(4)::before:hover {
   background-color: var(--amarelo);
 }
 
@@ -124,6 +118,9 @@ img:hover {
 
 .categorias__titulo {
   margin-bottom: 1rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: var(--fonte-secundaria);
 }
 
 .categorias__lista {
@@ -143,23 +140,27 @@ img:hover {
 .categorias__item:hover {
   opacity: 0.7;
 }
-
-.categorias__lista .categorias__item:nth-child(1),
+.categorias__item:nth-child(1) {
+  background-color: var(--amarelo);
+}
 .categorias__item:nth-child(5) {
   background-color: var(--amarelo);
 }
-
-.categorias__lista .categorias__item:nth-child(2),
+.categorias__item:nth-child(2) {
+  background-color: var(--laranja);
+}
 .categorias__item:nth-child(6) {
   background-color: var(--laranja);
 }
-
-.categorias__lista .categorias__item:nth-child(3),
+.categorias__item:nth-child(3) {
+  background-color: var(--lilas);
+}
 .categorias__item:nth-child(7) {
   background-color: var(--lilas);
 }
-
-.categorias__lista .categorias__item:nth-child(4),
+.categorias__item:nth-child(4) {
+  background-color: var(--verde);
+}
 .categorias__item:nth-child(8) {
   background-color: var(--verde);
 }
@@ -167,6 +168,9 @@ img:hover {
 .destaques {
   padding: 30px 0 10px;
   white-space: nowrap;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: var(--fonte-secundaria);
 }
 
 .destaques__titulo {
@@ -200,6 +204,9 @@ img:hover {
 /* Eventos */
 .eventos__titulo {
   margin-bottom: 1rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: var(--fonte-secundaria);
 }
 
 .eventos__item {
@@ -253,10 +260,7 @@ img:hover {
   background-color: var(--amarelo);
 }
 
-.agenda__atracao button:hover {
-  background-color: var(--amarelo);
-}
-
+/*Agenda*/
 .agenda__botao button {
   outline: none;
   border: none;
@@ -271,10 +275,12 @@ img:hover {
   background-color: var(--amarelo);
 }
 
-/*Agenda*/
 .agenda__titulo {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: var(--fonte-secundaria);
 }
 
 .agenda__item {
@@ -283,32 +289,33 @@ img:hover {
 .agenda__item img {
   width: 100%;
 }
-.agenda__item .agenda__informacoes {
+
+.agenda__informacoes {
   text-align: center;
   background-color: var(--cinza-escuro);
   color: white;
   text-transform: uppercase;
   padding-top: 1rem;
 }
-
 .agenda__informacoes h3 {
   font-size: 2rem;
 }
-.agenda__informacoes h4, .agenda__informacoes h5 {
+.agenda__informacoes h4 {
+  font-size: 1.5rem;
+}
+.agenda__informacoes h5 {
   font-size: 1.5rem;
 }
 
-.agenda__item .agenda__atracao {
+.agenda__atracao {
   text-align: center;
   padding: 1rem;
 }
-
 .agenda__atracao h6 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 2rem;
 }
-
 .agenda__atracao button {
   outline: none;
   border: none;
@@ -318,6 +325,9 @@ img:hover {
   width: 125px;
   cursor: pointer;
   transition: 0.5s;
+}
+.agenda__atracao button:hover {
+  background-color: var(--amarelo);
 }
 
 /* Footer */
@@ -344,7 +354,6 @@ img:hover {
 .rodape__logo {
   font-size: 12px;
 }
-
 .rodape__logo h4 {
   background-image: url("../img/logo_rodape.png");
   background-repeat: no-repeat;
