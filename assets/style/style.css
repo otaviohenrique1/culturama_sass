@@ -5,12 +5,12 @@
 
 :root {
   /*cores*/
-  --amarelo: #FFC756;
-  --laranja: #F66139;
-  --lilas: #7F8FFE;
-  --verde: #56B78C;
-  --cinza-claro: #D9D9D9;
-  --cinza-escuro: #959595;
+  --amarelo: $amarelo;
+  --laranja: $laranja;
+  --lilas: $lilas;
+  --verde: $verde;
+  --cinza-claro: $cinza_claro;
+  --cinza-escuro: $cinza_escuro;
   /*fontes*/
   --fonte-primaria: "Work Sans", sans-serif;
   --fonte-secundaria: "Fjalla One", sans-serif;
@@ -187,13 +187,12 @@ img:hover {
   margin-bottom: 1.5rem;
   background-image: url("../img/destaques-360.png");
   background-repeat: no-repeat;
-  height: 271px;
   background-size: cover;
   background-position: center;
+  height: 271px;
   opacity: 1;
   transition: 0.5s;
 }
-
 .categorias__imagem:hover {
   opacity: 0.7;
 }
@@ -209,27 +208,21 @@ img:hover {
   padding-bottom: 1rem;
   height: 318px;
 }
-
 .eventos__item img {
   width: 100%;
 }
-
 .eventos__item h3 {
   font-size: 18px;
   font-weight: 600;
+  padding-left: 1rem;
 }
-
-.eventos__item h4,
-.eventos__item h5 {
+.eventos__item h4 {
   font-size: 16px;
+  padding-left: 1rem;
 }
-
-.eventos__item h3,
-.eventos__item h4,
 .eventos__item h5 {
   padding-left: 1rem;
 }
-
 .eventos__item button {
   outline: none;
   border: none;
@@ -242,15 +235,28 @@ img:hover {
   cursor: pointer;
   transition: 0.5s;
 }
+.eventos__item button:hover {
+  background-color: var(--amarelo);
+}
 
-.eventos__botao button:hover,
-.agenda__botao button:hover,
-.eventos__item button:hover,
+.eventos__botao button {
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 0.75rem 0;
+  width: 148px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.eventos__botao button:hover {
+  background-color: var(--amarelo);
+}
+
 .agenda__atracao button:hover {
   background-color: var(--amarelo);
 }
 
-.eventos__botao button,
 .agenda__botao button {
   outline: none;
   border: none;
@@ -260,6 +266,9 @@ img:hover {
   width: 148px;
   cursor: pointer;
   transition: 0.5s;
+}
+.agenda__botao button:hover {
+  background-color: var(--amarelo);
 }
 
 /*Agenda*/
@@ -271,11 +280,9 @@ img:hover {
 .agenda__item {
   background-color: var(--cinza-claro);
 }
-
 .agenda__item img {
   width: 100%;
 }
-
 .agenda__item .agenda__informacoes {
   text-align: center;
   background-color: var(--cinza-escuro);
@@ -287,9 +294,7 @@ img:hover {
 .agenda__informacoes h3 {
   font-size: 2rem;
 }
-
-.agenda__informacoes h4,
-.agenda__informacoes h5 {
+.agenda__informacoes h4, .agenda__informacoes h5 {
   font-size: 1.5rem;
 }
 
